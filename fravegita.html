@@ -1,29 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fravegita</title>
+    <style>
+        /*contenedor de las box*/
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        /*box1*/
+        .box1 {
+            position: relative;
+            display: flex;
+            gap: 50px;
+        }
+
+        .boxcolor {
+            background-color: #c963c4ff;
+            width: 150px;
+            height: 200px;
+        }
+
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .img-producto {
+            position: absolute;
+            top: 35px;
+            left: 100px;
+            bottom: 0px;
+
+        }
+
+        span {
+            background-color: #c963c4ff;
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-weight: 900;
+        }
+
+        .boton {
+            margin-top: 15px;
+            margin-right: 10px;
+            background-color: transparent;
+            color: #9432d5ff;
+            border-color: #9432d5ff;
+            padding: 3px 20px;
+        }
+
+        /*box2*/
+        .boxcolor2 {
+            background-color: rgb(146, 82, 167);
+            width: 150px;
+            height: 200px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="color"> <!--caja de color/imagen-->
-            <img src="/superofer.jpg" alt="">
-        </div>
-        <div class="box"> <!--caja blanca-->
-            <div class="texto"> <!--subrayado-->
-                <p>Descubrilas</p>
+        <div class="box1">
+            <div class="boxcolor"> <!--caja color-->
             </div>
-            <div> <!--parrafo-->
-                <p>No te pierdas las mejores ofertas al precio más bajo</p>
+            <div class="img-producto">
+                <img src="/assets/img/etiqueta-especial.png" alt="">
             </div>
-            <div>
-                <button class="boton">Ver Más</button>
+            <div> <!--caja blanca-->
+                <div>
+                    <h4><span>DESCUBRILAS</span></h4>
+                </div>
+                <div>
+                    <p>No te pierdas las mejores ofertas<br>al precio más bajo</p>
+                </div>
+                <div>
+                    <button class="boton"> <a href="https://www.fravega.com/">Ver Más</a></button>
+                </div>
             </div>
 
         </div>
-        
+
+        <div class="box1">
+            <div class="boxcolor2"> <!--caja color-->
+            </div>
+            <div class="img-producto">
+                <img src="/assets/img/sofa.png" alt="">
+            </div>
+            <div> <!--caja blanca-->
+                <div>
+                    <h4><span>FRÁVEGA CASA</span></h4>
+                </div>
+                <div>
+                    <p>Hasta 40% off en colchones,<br>muebles y articulos de<br>decoración seleccionados</p>
+                </div>
+                <div>
+                    <button class="boton"> <a href="https://www.fravega.com/">Ver Más</a></button>
+                </div>
+            </div>
+
+        </div>
+
+
+
 
     </div>
+
+
+
 </body>
+
 </html>
