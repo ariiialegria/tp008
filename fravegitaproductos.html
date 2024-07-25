@@ -6,50 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fravegita producto</title>
     <style>
+        body{
+            background-color:lightgrey;
+        }
         .container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 30px;
+            position: relative;
+
         }
+
         /*producto 1*/
-        .producto{
-            position: absolute;
-            display: flex;
+        .producto {
             gap: 50px;
+            
+
         }
+
         img {
-            width: 100px;
-            height: 100px;
+            width: 320px;
+            height: 150px;
+        }
+        .img-producto{
+            background-color: white;
+            border: 1px solid;
         }
 
+        /*caja rosa*/
+        .producto-oferta {
+            background-color: #a74494ff;
+            color: white;
+            position: absolute;
+        }
+
+        .texto1 {
+            font-size: 15px;
+            text-align: left;
+            align-items: center;
+            align-items: flex-start;
+        }
+
+        .numero-oferta {
+            font-size: 40px;
+            text-align: left;
+        }
+
+        .signos {
+            font-size: 15px;
+            text-align: right;
+            justify-content: start;
 
 
+        }
+        .porcentaje{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box2 {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
     <main>
-        <div class="container">
+        <div class="container"> <!--flex-->
             <div class="producto">
-                <div class="producto-oferta"> <!--caja color-->
-                    <div>
-                        <div class="texto1">Hasta</div>
-                        <div>
-                            <div>25%</div>
-                            <div>Off</div>
-                        </div>
+                <div class="producto-oferta"> <!--caja rosa-->
 
+                    <div class="texto1">HASTA</div>
+                    <div class="box2"> <!--flex-->
+                        <div class="numero-oferta">25</div>
+                        <div class="signos"> <!--signos-->
+                            <div class="porcentaje">%</div>
+                            <div>OFF</div>
+                        </div>
                     </div>
                 </div> <!--producto oferta-->
                 <div class="img-producto">
-                    <img src="/assets/img/tegnoli.png" alt="">
-                </div>
-                <div>
-                    <p>Notebooks,tablets,smartwatches y mucho más en 6 sin interés.</p>
+                    <img src="/assets/img/compu.png" alt="" width="100%">
+                    <div>
+                        <p>Notebooks,tablets,smartwatches y mucho más en<br> 6 sin interés.</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="producto">
+                <div class="producto-oferta"> <!--caja rosa-->
+
+                    <div class="texto1">HASTA</div>
+                    <div class="box2"> <!--flex-->
+                        <div class="numero-oferta">45</div>
+                        <div class="signos"> <!--signos-->
+                            <div class="porcentaje">%</div>
+                            <div>OFF</div>
+                        </div>
+                    </div>
+                </div> <!--producto oferta-->
+                <div class="img-producto">
+                    <img src="/assets/img/fitness.jpg" alt="" >
+                    <div>
+                        <p>Aprovecha hasta 6 sin interés en articulos de<br>deportes y fitness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-oferta"> <!--caja rosa-->
+
+                    <div class="texto1">HASTA</div>
+                    <div class="box2"> <!--flex-->
+                        <div class="numero-oferta">30</div>
+                        <div class="signos"> <!--signos-->
+                            <div class="porcentaje">%</div>
+                            <div>OFF</div>
+                        </div>
+                    </div>
+                </div> <!--producto oferta-->
+                <div class="img-producto">
+                    <img src="/assets/img/electrodomesticos.jpeg" alt="" >
+                    <div>
+                        <p>Heladeras, cocinas,lavado y pequeños<br>electrodomesticos en hasta 6 sin interes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-oferta"> <!--caja rosa-->
+
+                    <div class="texto1">HASTA</div>
+                    <div class="box2"> <!--flex-->
+                        <div class="numero-oferta">20</div>
+                        <div class="signos"> <!--signos-->
+                            <div class="porcentaje">%</div>
+                            <div>OFF</div>
+                        </div>
+                    </div>
+                </div> <!--producto oferta-->
+                <div class="img-producto">
+                    <img src="/assets/img/piano.jpg" alt="" >
+                    <div>
+                        <p>Guitarras, baterias, bajos y muchos más instrumentos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
